@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.marcelorocha.bands80.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:src="@drawable/bands80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/informations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Informações" />
+
+    <ImageView
+        android:id="@+id/location_imageview"
+        android:src="@drawable/ic_place_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/informations_title" />
+
+    <TextView
+        android:id="@+id/location_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/location_imageview"
+        android:layout_below="@id/informations_title"
+        android:paddingRight="16dp"
+        android:paddingBottom="4dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Eliza Miranda Mall" />
+
+    <ImageView
+        android:id="@+id/phone_imageview"
+        android:src="@drawable/ic_phone_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/location_imageview" />
+
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/phone_imageview"
+        android:layout_below="@id/location_textview"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="(92) 3085-4636" />
+
+    <TextView
+        android:id="@+id/operating_hours_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_imageview"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Horário de Funcionamento" />
+
+    <ImageView
+        android:id="@+id/operating_hours_imageview"
+        android:src="@drawable/ic_date_range_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/operating_hours_title" />
+
+    <TextView
+        android:id="@+id/operating_hours_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operating_hours_title"
+        android:layout_toRightOf="@id/operating_hours_imageview"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Terça à Domingo de 18:00 às 23:00" />
+
+    <TextView
+        android:id="@+id/more_informations_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operating_hours_imageview"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Mais Informações" />
+
+    <TextView
+        android:id="@+id/more_informations_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_informations_title"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Venha Conhecer o Bands 80 Pizza, Burguer &amp; Cia ! Temos sanduíches feitos com hambúrguer artesanal e pizzas de sabores variados !!" />
+
+</RelativeLayout>
